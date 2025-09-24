@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تطبيق عرض الفيديوهات</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- زر الوضع الليلي -->
+  <button class="theme-toggle" id="themeToggle" onclick="toggleDarkMode()">🌙</button>
+
+  <header>
+    <video autoplay muted loop playsinline>
+      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
+      المتصفح لا يدعم تشغيل الفيديو.
+    </video>
+    <div class="overlay">
+      <h1>مرحبا بك في تطبيق عرض الفيديوهات</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="video-gallery">
+      <!-- نسخ بطاقات الفيديو هنا (تم حذف بعضها للتبسيط) -->
+
+      <div class="video-card">
+        <video controls>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 1</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/flower.mp4', 'flower.mp4')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+<div class="video-card">
+        <video controls>
+          <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 2</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/movie.mp4', 'movie.mp4')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="video-card">
+        <video controls>
+          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 3</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/mov_bbb.mp4', 'video3.mp4')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="video-card">
+        <video controls>
+          <source src="https://cdn.pixabay.com/video/2016/08/16/4506-179376440_large.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 4</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/1.mp4', 'video4.webm')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+
+<div class="video-card">
+        <video controls>
+          <source src="https://cdn.pixabay.com/video/2022/10/06/133773-758327901_large.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 4</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/4.mp4', 'video4.mp4')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+
+<div class="video-card">
+        <video controls>
+          <source src="https://cdn.pixabay.com/video/2022/07/16/124333-730771399_large.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 4</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/3.mp4', 'video4.mp4')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+
+<div class="video-card">
+        <video controls>
+          <source src="https://cdn.pixabay.com/video/2023/11/11/188742-883619742_large.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 4</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/10.mp4', 'video4.mp4')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+
+
+<div class="video-card">
+        <video controls>
+          <source src="https://cdn.pixabay.com/video/2023/06/30/169476-841382886_large.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 4</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/6.mp4', 'video4.mp4')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+
+<div class="video-card">
+        <video controls>
+          <source src="https://cdn.pixabay.com/video/2023/08/17/176513-855920734_large.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 4</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/9.mp4', 'video4.mp4')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+
+<div class="video-card">
+        <video controls>
+          <source src="https://cdn.pixabay.com/video/2023/05/06/161917-824623504_large.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 4</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/5.mp4', 'video4.mp4')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+
+<div class="video-card">
+        <video controls>
+          <source src="https://cdn.pixabay.com/video/2021/10/02/90590-626984663_large.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 4</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/2.mp4', 'video4.mp4')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+
+<div class="video-card">
+        <video controls>
+          <source src="https://cdn.pixabay.com/video/2023/08/09/175298-853193700_large.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 4</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/7.mp4', 'video4.mp4')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+
+
+
+
+
+ <div class="video-card">
+        <video controls>
+          <source src="https://cdn.pixabay.com/video/2023/08/16/176306-855196340_large.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 1</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/8.mp4', '8.mp4')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+
+ <div class="video-card">
+        <video controls>
+          <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 1</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/WeAreGoingOnBullrun.mp4', 'WeAreGoingOnBullrun.mp4')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+
+ <div class="video-card">
+        <video controls>
+          <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 1</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/mouh.mp4', 'flower.mp4')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+
+
+ <div class="video-card">
+        <video controls>
+          <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 1</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/mouha.mp4', 'mouha.mp4')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+
+ <div class="video-card">
+        <video controls>
+          <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 1</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/ForBiggerMeltdowns.mp4', 'ForBiggerMeltdowns.mp4')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+
+
+ <div class="video-card">
+        <video controls>
+          <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4" />
+          المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+        <p>فيديو 1</p>
+        <button onclick="downloadFile('https://raw.githubusercontent.com/skimo21000-tech/video-gallery/main/ForBiggerBlazes.mp4', 'ForBiggerBlazes.mp4')" class="download-btn" title="تحميل الفيديو">
+          تحميل
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 20h14v-2H5v2zm7-18l-5 5h3v6h4v-6h3l-5-5z"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- أضف باقي الفيديوهات هنا بنفس التنسيق -->
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
